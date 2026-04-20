@@ -1,0 +1,53 @@
+/* style.css */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation de l'effet machine à écrire */
+#typewriter {
+  display: inline-block;
+  min-width: 10px;
+}
+
+/* Style pour le canvas de particules */
+#particle-canvas {
+  pointer-events: none;
+}
+
+/* Effet de carte holographique */
+.hover\:rotate-y-3:hover {
+  transform: rotateY(3deg);
+}
+
+/* Filtre actif pour les boutons de projet */
+.filter-btn.active {
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  color: white;
+  border-color: transparent;
+}
+
+/* Transition pour les panels de compétences */
+.skill-panel {
+  transition: opacity 0.5s, transform 0.5s, box-shadow 0.3s;
+}
+
+/* Style pour les cartes projets */
+.project-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Animation d'apparition au scroll */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
